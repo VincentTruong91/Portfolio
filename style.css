@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    outline: 1px solid blue !important;
+}
+
+body{
+    margin:0;
+    padding:0;
+    border: 3px solid green;
+    margin-top: 3vw;
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(235, 234, 215);
+}
+
+nav{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 3vw;
+    width: 100vw;
+    position: fixed;
+    overflow: hidden;
+    top:0;
+    left:0;
+    border: 3px solid rgb(128, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+}
+
+nav a{
+    margin: 0 4.5vw;
+    font-size: 25px;
+}
+
+nav .no-ul{
+    text-decoration: none;
+}
+
+.first-page{
+    height: 100%;
+    width: 100%;
+}
+
+.first-page img{
+    height: 500px;
+    width: 500px;
+    margin-top: 10vh;
+    margin-left: 20vw;
+    float:left;
+}
+
+.first-page p{
+    color: rgb(43, 46, 50);
+    float: right;
+    clear: right;  
+}
+
+.first-page .description{
+    margin-right: 10vw;
+}
+
+.first-page .intro{
+    font-size: 100px;
+}
+
+.first-page .sub-intro{
+    font-size: 24px;
+}
+
+.first-page #forest-green-text{
+    color: rgb(83, 101, 76);
+}
+
+
+
