@@ -129,3 +129,60 @@ nav a:hover{
   }
 
 
+
+
+  @media (width <= 790px){
+    .first-page{
+        display: flex;
+        justify-content: center;
+        height: 100%;
+        width: 100%;
+        margin-top: 70px;
+        border: 3px solid rgb(68, 228, 193);
+    }
+    .profile-picture{
+        height: 550px;
+        width: 550px;
+        z-index: 2;
+        margin-top: 30px;
+      }
+      @media (width <= 680px){
+        .first-page{
+            border: 3px solid rgb(55, 226, 55);
+        }
+        .profile-picture{
+            height: 250px;
+            width: 250px;
+            z-index: 2;
+            margin-top: 30px;
+          }
+      }
+  }
+  @media (width > 790px){
+    .first-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+        margin-top: 70px;
+        position: relative;
+        border: 3px solid red;
+      }
+      /*img-effect1{
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+      }*/
+      .profile-picture{
+        height: 550px;
+        width: 550px;
+        position: absolute;
+        top: 4.5vw;
+        left: 15vw;
+        z-index: 2;
+      }
+  }
+
+
