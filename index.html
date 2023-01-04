@@ -11,31 +11,79 @@
 
 
     <!--Bootstrap package of icons relating to social medias-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
+
+    <!--Font Awesome Icon-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
 </head>
-<body>
+<body class="body">
     <nav class="navigation-bar">
-        <a class="no-ul">Projects</a>
-        <a class="no-ul">LinkedIn</a>
-        <a class="no-ul">Github</a>
-        <a class="no-ul">Resume</a>
-        <a href="#anaboutpopup" class="no-ul">Contact</a>
-    </nav>
+        <div class="navigation-links">
+          <a class="no-ul">Projects</a>
+          <a class="no-ul">LinkedIn</a>
+          <a class="no-ul">Github</a>
+          <a class="no-ul">Resume</a>
+          <a href="#anaboutpopup" class="no-ul">Contact</a>
+        </div>
+        <i class="fas fa-bars menu-icon"></i>
+        <i class="fa fa-times exit-icon"></i>
+      </nav>
 
-    <div class="first-page">
+      <div class="popup">
+        <div class="center">
+          <ul class="navigation-links">
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">Github</a></li>
+            <li><a href="#">Resume</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </div>
+      </div>
+
+    
+    <!--<div class="first-page">
         <img class="img-effect1" src="./images/effects.gif">
         <img class="img-effect2" src="./images/effects.gif">
-        <img class="profile-picture"src="./images/IMG-4299.jpg"> 
-    </div>
+        <img class="profile-picture"src="./images/IMG-4299.jpg">
+        <div class="description">
+            <p class="intro">hello, I'm</p>
+            <p class="intro" id="forest-green-text">Vincent Truong</p>
+            <p class="sub-intro">computer science student</p>
+            <p class="sub-intro" id="forest-green-text">vincenttruong6050@gmail.com</p>
+        </div>
+    </div> -->
 
-    <div class="description">
-        <p class="intro">hello, I'm</p>
-        <p class="intro" id="forest-green-text">Vincent Truong</p>
-        <p class="sub-intro">computer science student</p>
-        <p class="sub-intro" id="forest-green-text">vincenttruong6050@gmail.com</p>
-    </div>
 
+    <!--
+    <div class="space-for-project-section"></div>
+
+    <div class="my-projects-page">
+        <p class="my-projects-header">Projects</p>
+        <div class="project1">
+            <div><p>Pomodoro App</p>
+                <img class="pomodoro-image"
+                src="./images/pomodoro-screenshot.png">
+            </div>
+            <div>
+                <p>Technologies Used:</p>
+                <p>HTML, CSS, JavaScript, Git,
+                    Bootstrap, YT IFrame API</p>
+                <p>What I've learned:</p>
+                <p>...</p>
+
+                <p>Individual project</p>
+                <p>github repo</p>
+                <p>visit site</p>
+            </div>
+        </div>
+        <div class="project2"></div>
+        <div class="project3"></div>
+        <div class="project4"></div>
+    </div>
+-->
+    <script src="./app.js"></script>
 </body>
 </html>
 
