@@ -12,6 +12,8 @@ body{
     height: 100vh;
     width: 100vw;
     background-color: rgb(235, 234, 215);
+    min-width: 360px;
+    min-height: 750px;
 }
 
 nav{
@@ -26,7 +28,7 @@ nav{
     top:0;
     left:0;
     background-color: rgba(255, 255, 255, 0);
-    z-index: 3;
+    z-index: 15;
 }
 
 nav a{
@@ -84,14 +86,16 @@ nav a:hover{
 .popup {
     display: none;
     position: fixed;
-    z-index: 1;
+    z-index: 10;
     left: 0;
     top: 0;
     width: 100%;
     height: 60%;
     overflow: auto;
-    background-color: rgba(83, 101, 76, 0.95);
+    background-color: rgba(83, 101, 76, 0.55);
   }
+
+
   
   .center {
     position: absolute;
@@ -128,46 +132,123 @@ nav a:hover{
     color: rgb(235, 234, 215);
   }
 
+  .description{
+    width: 100%;
+    height: 50%;
+  }
 
+  .description #forest-green-text{
+    color:rgb(83, 101, 76);
+  }
+
+  .description #figma-file{
+    color:rgb(83, 101, 76);
+  }
+  .description #figma-file:hover{
+    color: rgb(162, 189, 57);    
+  }
 
 
   @media (width <= 790px){
     .first-page{
         display: flex;
         justify-content: center;
-        height: 100%;
+        align-items: center;
+        height: 50%;
         width: 100%;
-        margin-top: 70px;
-        border: 3px solid rgb(68, 228, 193);
+        margin-top: 130px;
+        position: relative;
     }
     .profile-picture{
+        position: absolute;
         height: 550px;
         width: 550px;
         z-index: 2;
         margin-top: 30px;
       }
+      .description{
+        position: relative;
+      }
+      .description .intro{
+        width: 100%;
+        margin-left: 0;
+        margin: 0;
+        position: absolute;
+        z-index: 4;
+      }
+      .description .sub-intro{
+        width: 100%;
+        margin-left: 0;
+        margin: 0;
+        position: absolute;
+        z-index: 4;
+        font-size: 20px;
+        margin-top: 40px;
+      }
+      .description p{
+        overflow: hidden;
+        text-align: right;
+        padding-right: 5vw;
+        font-size: 50px;
+      }
+
+      .description p:first-child {
+        top: 0; /* position the first p element at the top of the parent element */
+      }
+      .description p:nth-child(2) {
+        top: 60px; /* position the second p element 120 pixels below the top of the parent element */
+      }
+      .description p:nth-child(3) {
+        top: 100px; /* position the third p element 240 pixels below the top of the parent element */
+      }
+      .description p:nth-child(4) {
+        top: 140px; /* position the third p element 240 pixels below the top of the parent element */
+      }
+      .description p:nth-child(5) {
+        top: 180px; /* position the fifth p element 340 pixels below the top of the parent element */
+      }
+
+      
       @media (width <= 680px){
         .first-page{
-            border: 3px solid rgb(55, 226, 55);
+            height: 35%;
+            margin-top: 70px;
         }
         .profile-picture{
             height: 250px;
             width: 250px;
             z-index: 2;
             margin-top: 30px;
-          }
+        }
+        .description{
+            position: relative;
+        }
+        .description .intro{
+            width: 100%;
+            margin-left: 0;
+            margin: 0;
+            position: absolute;
+            z-index: 4;
+        }
+        .description p{
+            overflow: hidden;
+            text-align: left;
+            padding-right: 5vw;
+            font-size: 40px;
+        }
       }
   }
+
+
   @media (width > 790px){
     .first-page{
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 100%;
+        height: 50%;
         width: 100%;
         margin-top: 70px;
         position: relative;
-        border: 3px solid red;
       }
       /*img-effect1{
         position: absolute;
@@ -182,6 +263,57 @@ nav a:hover{
         top: 4.5vw;
         left: 15vw;
         z-index: 2;
+      }
+      .description{
+        position: relative;
+      }
+      .description .intro{
+        width: 100%;
+        margin-left: 0;
+        margin: 0;
+        position: absolute;
+        z-index: 4;
+      }
+
+      .description .sub-intro{
+        width: 100%;
+        margin-left: 0;
+        margin: 0;
+        position: absolute;
+        z-index: 4;
+        font-size: 24px;
+        margin-top: 40px;
+      }
+
+      .description p{
+        overflow: hidden;
+        text-align: right;
+        padding-right: 5vw;
+        font-size: 100px;
+      }
+      @media (791px <= width <= 840px){
+        .description p{
+            font-size: 90px;
+        }
+        .description .sub-intro{
+            margin-top: 30px;
+        }
+      }
+
+      .description p:first-child {
+        top: 0; /* position the first p element at the top of the parent element */
+      }
+      .description p:nth-child(2) {
+        top: 120px; /* position the second p element 120 pixels below the top of the parent element */
+      }
+      .description p:nth-child(3) {
+        top: 240px; /* position the third p element 240 pixels below the top of the parent element */
+      }
+      .description p:nth-child(4) {
+        top: 290px; /* position the fourth p element 290 pixels below the top of the parent element */
+      }
+      .description p:nth-child(5) {
+        top: 340px; /* position the fifth p element 340 pixels below the top of the parent element */
       }
   }
 
