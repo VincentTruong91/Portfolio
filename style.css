@@ -204,9 +204,42 @@ nav a:hover{
       .description p:nth-child(4) {
         top: 140px; /* position the third p element 240 pixels below the top of the parent element */
       }
-      .description p:nth-child(5) {
+      .description a p:last-child {
         top: 180px; /* position the fifth p element 340 pixels below the top of the parent element */
       }
+
+      .my-projects-page .my-projects-header{
+        font-size: 60px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 1px solid green;
+    }
+    .project1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+        border: 5px solid orange;
+    }
+    .project1 div{
+        width: 50%;
+    }
+    .project1 p{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .project1 .project-headers{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .project1 .pomodoro-image{
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
 
       
       @media (width <= 680px){
@@ -235,6 +268,45 @@ nav a:hover{
             text-align: left;
             padding-right: 5vw;
             font-size: 40px;
+        }
+
+
+        .my-projects-page .my-projects-header{
+            font-size: 60px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            border: 1px solid rgb(68, 211, 230);
+        }
+        .project1{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 50px;
+            border: 5px solid orange;
+        }
+        .project1 div{
+            width: 100%;
+        }
+        .project1 p{
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        .project1 .project-headers{
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        .project1 .pomodoro-image{
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+        }
+
+        .left-section{
+            border: 1px solid red;
+            
         }
       }
   }
@@ -312,9 +384,96 @@ nav a:hover{
       .description p:nth-child(4) {
         top: 290px; /* position the fourth p element 290 pixels below the top of the parent element */
       }
-      .description p:nth-child(5) {
+      .description a p:last-child {
         top: 340px; /* position the fifth p element 340 pixels below the top of the parent element */
       }
+
+      .my-projects-page .my-projects-header{
+        font-size: 60px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 1px solid green;
+    }
+    .project1{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+        border: 5px solid orange;
+    }
+    .project1 div{
+        width: 50%;
+    }
+    .project1 p{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .project1 .project-headers{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .project1 .pomodoro-image{
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+
   }
 
 
+
+  @media (width > 1200px){
+    .my-projects-page .my-projects-header{
+        font-size: 100px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        border: 1px solid green;
+    }
+    .project1{
+        display: flex;
+        flex-direction: row;
+        margin: 100px;
+        border: 1px solid orange;
+    }
+    .project1 div{
+        width: 50%;
+    }
+    .project1 p{
+        font-size: 24px;
+        text-align: center;
+    }
+    
+    .project1 .project-headers{
+        font-size: 40px;
+        text-align: center;
+    }
+    
+    .project1 .pomodoro-image{
+        display: block;
+        margin: 0 auto;
+        width: 500px;
+    }
+    
+    .left-section{
+        border: 1px solid blue;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+    
+    .right-section{
+        border: 1px solid rgb(255, 0, 255);
+    }
+    
+    .left-section, .right-section{
+        padding: 30px;
+    }
+  }
+  .my-projects-page{
+    width: 100%;
+    height: 400%;
+  }
