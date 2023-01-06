@@ -213,14 +213,12 @@ nav a:hover{
         justify-content: center;
         align-items: center;
         text-align: center;
-        border: 1px solid green;
     }
     .project{
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 50px;
-        border: 5px solid orange;
     }
     .project div{
         width: 50%;
@@ -275,14 +273,12 @@ nav a:hover{
             justify-content: center;
             align-items: center;
             text-align: center;
-            border: 1px solid rgb(68, 211, 230);
         }
         .project{
             display: flex;
             flex-direction: column;
             align-items: center;
             margin: 20px;
-            border: 5px solid orange;
         }
         .project div{
             width: 100%;
@@ -301,9 +297,6 @@ nav a:hover{
             display: block;
             margin: 0 auto;
             width: 300px;
-        }
-        .left-section{
-            border: 1px solid red;
         }
       }
   }
@@ -384,14 +377,12 @@ nav a:hover{
         justify-content: center;
         align-items: center;
         text-align: center;
-        border: 1px solid green;
     }
     .project{
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 50px;
-        border: 5px solid orange;
     }
     .project div{
         width: 50%;
@@ -422,13 +413,11 @@ nav a:hover{
         justify-content: center;
         align-items: center;
         text-align: center;
-        border: 1px solid green;
     }
     .project{
         display: flex;
         flex-direction: row;
         margin: 100px;
-        border: 1px solid orange;
     }
     .project div{
         width: 50%;
@@ -450,14 +439,9 @@ nav a:hover{
     }
     
     .left-section{
-        border: 1px solid blue;
         display: flex;
         align-items: center;
         flex-direction: column;
-    }
-    
-    .right-section{
-        border: 1px solid rgb(255, 0, 255);
     }
     
     .left-section, .right-section{
