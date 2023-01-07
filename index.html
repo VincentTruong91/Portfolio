@@ -8,23 +8,28 @@
     <title>Vincent's Portfolio</title>
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=DM+Serif+Display&family=Handlee&family=Kaushan+Script&family=Merienda:wght@300&family=Monoton&family=Poppins:wght@700&family=Shadows+Into+Light&display=swap" rel="stylesheet">
 
-    <!--Bootstrap package of icons relating to social medias-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.rtl.min.css" integrity="sha384-gXt9imSW0VcJVHezoNQsP+TNrjYXoGcrqBZJpry9zJt8PCQjobwmhMGaDHTASo9N" crossorigin="anonymous">
-
     <!--Font Awesome Icon-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
 
-<link rel="icon" href="./images/tab_logo.png">
+    <!--Tab Icon-->
+    <link rel="icon" href="./images/tab_logo.png">
+
+    <!--Web Animations API that would create js scroll animation-->
+    <script src="animate.js" type="module" defer></script>
 
 </head>
+
+
+
 <body class="body">
+    <div class="scroll-tracker"></div>
     <nav class="navigation-bar">
         <div class="navigation-links">
-          <a class="no-ul" href="#anaboutpopup" >Projects</a>
+          <a class="no-ul" href="#projects" >Projects</a>
           <a class="no-ul" href="https://www.linkedin.com/in/vincent-truong-885b7a234/" target="_blank">LinkedIn</a>
           <a class="no-ul" href="https://github.com/VincentTruong91" target="_blank">Github</a>
-          <a class="no-ul" href="#" target="_blank">Resume</a>
-          <a class="no-ul" href="#anaboutpopup">Contact</a>
+          <a class="no-ul" href="./images/VINCENT_TRUONG_RESUME.pdf" target="_blank">Resume</a>
+          <a class="no-ul" href="mailto:vincenttruong6050@gmail.com">Contact</a>
         </div>
         <i class="fas fa-bars menu-icon"></i>
         <i class="fa fa-times exit-icon"></i>
@@ -33,18 +38,17 @@
       <div class="popup">
         <div class="center">
           <ul class="navigation-links">
-            <li><a href="#">Projects</a></li>
+            <li><a href="#projects">Projects</a></li>
             <li><a href="https://www.linkedin.com/in/vincent-truong-885b7a234/" target="_blank">LinkedIn</a></li>
             <li><a href="https://github.com/VincentTruong91" target="_blank">Github</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="./images/VINCENT_TRUONG_RESUME.pdf" target="_blank">Resume</a></li>
+            <li><a href="mailto:vincenttruong6050@gmail.com">Contact</a></li>
           </ul>
         </div>
       </div>
 
     
     <div class="first-page">
-        <!--<img class="img-effect1" src="./images/effects.gif"> -->
         <img class="profile-picture"src="./images/IMG-4299.jpg">
         
     </div>
@@ -58,7 +62,7 @@
     </div>
 
 
-    <div class="my-projects-page">
+    <div class="my-projects-page" id="projects">
         <p class="my-projects-header">Projects</p>
         <div class="project">
             <div class="left-section">
@@ -73,8 +77,8 @@
                 <p class="project-headers">What I've learned:</p>
                 <p>Following a new studying strategy, or even sticking to one is very challenging. As a current college student, this is my first project where I began to learn the basics of implementing APIs. I also made sure that I consolidate my understanding on the model-view-controller strategy to create this app. Now, I currently use this app as a way to control the pace that I spend on learning.</p>
                 <p>Individual project</p>
-                <p>github repo</p>
-                <p>visit site</p>
+                <p><a href="https://github.com/VincentTruong91/Pomodoro" target="_blank">github repo</a></p>
+                <p><a href="https://vincenttruong91.github.io/Pomodoro/" target="_blank">visit site</a></p>
             </div>
         </div>
         <div class="project">
@@ -91,8 +95,8 @@
                 </p>
 
                 <p>Individual project</p>
-                <p>github repo</p>
-                <p>visit site</p>
+                <p><a href="https://github.com/VincentTruong91/SimonSaysGame" target="_blank">github repo</a></p>
+                <p><a href="https://vincenttruong91.github.io/SimonSaysGame/" target="_blank">visit site</a></p>
             </div>
         </div>
         <div class="project">
@@ -108,8 +112,7 @@
                 <p>This is the very first project that I've learned how to apply XML and Java into a functional game. However, this project helped me understand the use of Git in a collaborative setting. With a total of 120+ commits using Git, I learned the basics of merge, push, pull, and commit. I also learned the basics of Computer AI and how it intereacts on a player-turn based game.</p>
 
                 <p>Collaborative project</p>
-                <p>github repo</p>
-                <p>visit site</p>
+                <p><a href="https://github.com/blanketspace/stratego_alpha" target="_blank">github repo</a></p>
             </div>
         </div>
         <div class="project">
@@ -125,8 +128,8 @@
                 <p>This project was built throughout the COVID-19 pandemic, where it mainly helped me build on my networking skills. I've noticed that my school had all the resources that they can provide for their students, but it's hard for the students to find them during the pandemic. So I decided on making a website, where most, if not, all of the resources related to preparing for college can be easily navigated in a single web page. I was reaching out to advisors from different and also asked my counselor on improvements on drafts. The important takeaway from this project is networking and communication. </p>
 
                 <p>Individual project</p>
-                <p>github repo</p>
-                <p>visit site</p>
+                <p><a href="https://github.com/VincentTruong91/SeniorDesignWebsite" target="_blank">github repo</a></p>
+                <p><a href="https://vincenttruong91.github.io/SeniorDesignWebsite/" target="_blank">visit site</a></p>
             </div>
         </div>
     </div>

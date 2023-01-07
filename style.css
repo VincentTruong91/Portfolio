@@ -253,10 +253,10 @@ nav a:hover{
         }
         .description{
             position: relative;
+            margin-left: 20px;
         }
         .description .intro{
             width: 100%;
-            margin-left: 0;
             margin: 0;
             position: absolute;
             z-index: 4;
@@ -450,5 +450,14 @@ nav a:hover{
   }
   .my-projects-page{
     width: 100%;
-    height: 400%;
+    height: 360%;
+  }
+
+  .scroll-tracker{
+    position: fixed;
+    inset: 0 0 auto;
+    height: .5rem;
+    background-image: linear-gradient(to right, rgb(121, 177, 107), rgb(145, 145, 119));
+    z-index: 20;
+    transform-origin: left;
   }
