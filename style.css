@@ -161,8 +161,8 @@ nav a:hover{
     }
     .profile-picture{
         position: absolute;
-        height: 550px;
-        width: 550px;
+        height: 55vw;
+        width: 55vw;
         z-index: 2;
         margin-top: 30px;
       }
@@ -246,8 +246,8 @@ nav a:hover{
             margin-top: 70px;
         }
         .profile-picture{
-            height: 250px;
-            width: 250px;
+            height: 45vw;
+            width: 45vw;
             z-index: 2;
             margin-top: 30px;
         }
