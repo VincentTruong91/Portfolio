@@ -43,6 +43,8 @@ nav a:hover{
     nav{
         display: flex;
         justify-content:flex-end;
+        margin-top: 20px;
+        position: fixed;
     }
     .navigation-bar .menu-icon {
         display: block;
@@ -63,7 +65,32 @@ nav a:hover{
     .navigation-links{
         display:none;
     }
+    .first-page .profile-picture{
+        margin: -100px;
+    }
 }
+  
+  @media (width > 402px) {
+    .navigation-bar .menu-icon,
+    .navigation-bar .exit-icon {
+      display: none;
+    }
+    nav a {
+      font-size: 2.5vw;
+      margin: 0 3.5vw;
+    }
+    @media (width >= 1000px) {
+      nav a {
+        font-size: 25px;
+      }
+    }
+    nav .no-ul {
+      text-decoration: none;
+    }
+    .navigation-links {
+      display: flex;
+    }
+  }
 
 @media (width > 402px){
     .navigation-bar .menu-icon, .navigation-bar .exit-icon{
