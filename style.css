@@ -39,7 +39,45 @@ nav a:hover{
     cursor: pointer;
 }
 
-@media (width <= 402px){   
+/*
+    Display Types with width dimensions:
+    desktop: 1200px
+    laptop: 1024px
+    tablet: 768px
+    phone: 480px
+*/
+
+/*@media screen and (width <= 480px){
+    nav{
+        display: flex;
+        justify-content:flex-end;
+        margin-top: 20px;
+        position: fixed;
+    }
+    .navigation-bar .menu-icon {
+        display: block;
+        margin-right: 20px;
+        color:rgb(83, 101, 76);
+        font-size: 25px;
+    }
+    .navigation-bar .menu-icon:hover {
+        color: rgb(162, 189, 57);
+        cursor: pointer;
+    }
+    .navigation-bar .exit-icon {
+        display: none;
+        margin-right: 20px;
+        color:rgb(235, 234, 215);
+        font-size: 30px;
+    }
+    .navigation-links{
+        display:none;
+    }
+    
+}*/
+
+
+@media screen and (width <= 402px){   
     nav{
         display: flex;
         justify-content:flex-end;
@@ -70,7 +108,7 @@ nav a:hover{
     }
 }
   
-  @media (width > 402px) {
+  @media screen and (width > 402px) {
     .navigation-bar .menu-icon,
     .navigation-bar .exit-icon {
       display: none;
@@ -79,7 +117,7 @@ nav a:hover{
       font-size: 2.5vw;
       margin: 0 3.5vw;
     }
-    @media (width >= 1000px) {
+    @media screen and (width >= 1000px) {
       nav a {
         font-size: 25px;
       }
@@ -92,7 +130,7 @@ nav a:hover{
     }
   }
 
-@media (width > 402px){
+@media screen and (width > 402px){
     .navigation-bar .menu-icon, .navigation-bar .exit-icon{
         display:none;
     }
@@ -100,7 +138,7 @@ nav a:hover{
         font-size: 2.5vw;
         margin: 0 3.5vw;
     }
-    @media (width >= 1000px){
+    @media screen and (width >= 1000px){
         nav a{
             font-size: 25px;
         }
@@ -176,7 +214,7 @@ nav a:hover{
   }
 
 
-  @media (width <= 790px){
+  @media screen and (width <= 790px){
     .first-page{
         display: flex;
         justify-content: center;
@@ -219,20 +257,21 @@ nav a:hover{
         font-size: 50px;
       }
 
+
       .description p:first-child {
-        top: 0; /* position the first p element at the top of the parent element */
+        top: 0; 
       }
       .description p:nth-child(2) {
-        top: 60px; /* position the second p element 120 pixels below the top of the parent element */
+        top: 60px;
       }
       .description p:nth-child(3) {
-        top: 100px; /* position the third p element 240 pixels below the top of the parent element */
+        top: 100px; 
       }
       .description p:nth-child(4) {
-        top: 140px; /* position the third p element 240 pixels below the top of the parent element */
+        top: 140px; 
       }
       .description a p:last-child {
-        top: 180px; /* position the fifth p element 340 pixels below the top of the parent element */
+        top: 180px; 
       }
 
       .my-projects-page .my-projects-header{
@@ -267,7 +306,7 @@ nav a:hover{
     }
 
       
-      @media (width <= 680px){
+      @media screen and (width <= 680px){
         .first-page{
             height: 35%;
             margin-top: 70px;
@@ -329,7 +368,7 @@ nav a:hover{
   }
 
 
-  @media (width > 790px){
+  @media screen and (width > 790px){
     .first-page{
         display: flex;
         justify-content: center;
@@ -374,7 +413,7 @@ nav a:hover{
         padding-right: 5vw;
         font-size: 100px;
       }
-      @media (791px <= width <= 840px){
+      @media screen and (791px <= width <= 840px){
         .description p{
             font-size: 90px;
         }
@@ -384,19 +423,19 @@ nav a:hover{
       }
 
       .description p:first-child {
-        top: 0; /* position the first p element at the top of the parent element */
+        top: 0; 
       }
       .description p:nth-child(2) {
-        top: 120px; /* position the second p element 120 pixels below the top of the parent element */
+        top: 120px;
       }
       .description p:nth-child(3) {
-        top: 240px; /* position the third p element 240 pixels below the top of the parent element */
+        top: 240px;
       }
       .description p:nth-child(4) {
-        top: 290px; /* position the fourth p element 290 pixels below the top of the parent element */
+        top: 290px; 
       }
       .description a p:last-child {
-        top: 340px; /* position the fifth p element 340 pixels below the top of the parent element */
+        top: 340px; 
       }
 
       .my-projects-page .my-projects-header{
@@ -434,7 +473,7 @@ nav a:hover{
 
 
 
-  @media (width > 1200px){
+  @media screen and (width > 1200px){
     .my-projects-page .my-projects-header{
         font-size: 100px;
         justify-content: center;
@@ -488,3 +527,7 @@ nav a:hover{
     z-index: 20;
     transform-origin: left;
   }
+  
+
+
+  
