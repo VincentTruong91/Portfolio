@@ -39,15 +39,539 @@ nav a:hover{
     cursor: pointer;
 }
 
+
+
+
+
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 60%;
+    overflow: auto;
+    background-color: rgba(83, 101, 76, 0.55);
+  }
+
+  .center {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .popup .navigation-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-top: 10px;
+  }
+  
+  .popup .navigation-links li {
+    margin: 1.5vh 0;
+    width: 125%;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .popup .navigation-links li a {
+    text-decoration: none;
+    font-size: 30px;
+  }
+
+  .popup a{
+    color: rgb(235, 234, 215);
+  }
+
+  .description{
+    width: 100%;
+    height: 50%;
+  }
+
+  .description #forest-green-text{
+    color:rgb(83, 101, 76);
+  }
+
+  .description #figma-file{
+    color:rgb(83, 101, 76);
+  }
+  .description #figma-file:hover{
+    color: rgb(162, 189, 57);    
+  }
+
+
+
+
+
+  .my-projects-page{
+    width: 100%;
+    height: 360%;
+  }
+
+  .scroll-tracker{
+    position: fixed;
+    inset: 0 0 auto;
+    height: .5rem;
+    background-image: linear-gradient(to right, rgb(121, 177, 107), rgb(145, 145, 119));
+    z-index: 20;
+    transform-origin: left;
+  }
+
+
+
 /*
-    Display Types with width dimensions:
+    Display Types with min-width dimensions:
     desktop: 1200px
     laptop: 1024px
     tablet: 768px
     phone: 480px
 */
 
-/*@media screen and (width <= 480px){
+@media screen and (min-width: 1200px){
+    .first-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+        margin-top: 70px;
+        position: relative;
+      }
+      .profile-picture{
+        height: 550px;
+        width: 550px;
+        position: absolute;
+        top: 4.5vw;
+        left: 15vw;
+        z-index: 2;
+      }
+      .description{
+        position: relative;
+      }
+      .description .intro{
+        width: 100%;
+        margin-left: 0;
+        margin: 0;
+        position: absolute;
+        z-index: 4;
+      }
+
+      .description .sub-intro{
+        width: 100%;
+        margin-left: 0;
+        margin: 0;
+        position: absolute;
+        z-index: 4;
+        font-size: 24px;
+        margin-top: 40px;
+      }
+
+      .description p{
+        overflow: hidden;
+        text-align: right;
+        padding-right: 5vw;
+        font-size: 100px;
+      }
+
+      .description p:first-child {
+        top: 0; 
+      }
+      .description p:nth-child(2) {
+        top: 120px;
+      }
+      .description p:nth-child(3) {
+        top: 240px;
+      }
+      .description p:nth-child(4) {
+        top: 290px; 
+      }
+      .description a p:last-child {
+        top: 340px; 
+      }
+
+      .my-projects-page .my-projects-header{
+        font-size: 60px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .project{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+    }
+    .project div{
+        width: 50%;
+    }
+    .project p{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .project .project-headers{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .project .project-image{
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+}
+
+
+@media screen and (min-width: 1024px) and (max-width: 1199px){
+    .first-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+        margin-top: 70px;
+        position: relative;
+      }
+      .profile-picture{
+        height: 350px;
+        width: 350px;
+        position: absolute;
+        top: 4.5vw;
+        left: 15vw;
+        z-index: 2;
+      }
+      .description{
+        position: relative;
+      }
+      .description .intro{
+        width: 100%;
+        margin-left: 0;
+        margin-top: -10vw;
+        position: absolute;
+        z-index: 4;
+        border: 1px solid blue;
+      }
+
+      .description .sub-intro{
+        width: 100%;
+        margin-left: 0;
+        margin: 0;
+        position: absolute;
+        z-index: 4;
+        font-size: 24px;
+        margin-top: -10vw;
+      }
+
+      .description p{
+        overflow: hidden;
+        text-align: right;
+        padding-right: 5vw;
+        font-size: 80px;
+      }
+
+      .description p:first-child {
+        top: 0; 
+      }
+      .description p:nth-child(2) {
+        top: 120px;
+      }
+      .description p:nth-child(3) {
+        top: 240px;
+      }
+      .description p:nth-child(4) {
+        top: 290px; 
+      }
+      .description a p:last-child {
+        top: 340px; 
+      }
+
+      .my-projects-page .my-projects-header{
+        font-size: 60px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .project{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+    }
+    .project div{
+        width: 50%;
+    }
+    .project p{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .project .project-headers{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .project .project-image{
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1023px){
+    .first-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+        margin-top: 130px;
+        position: relative;
+    }
+    .profile-picture{
+        position: absolute;
+        height: 55vw;
+        width: 55vw;
+        z-index: 2;
+        margin-top: 30px;
+      }
+      .description{
+        position: relative;
+      }
+      .description .intro{
+        width: 100%;
+        margin-left: 0;
+        margin: 0;
+        position: absolute;
+        z-index: 4;
+      }
+      .description .sub-intro{
+        width: 100%;
+        margin-left: 0;
+        margin: 0;
+        position: absolute;
+        z-index: 4;
+        font-size: 20px;
+        margin-top: 40px;
+      }
+      .description p{
+        overflow: hidden;
+        text-align: right;
+        padding-right: 5vw;
+        font-size: 50px;
+      }
+
+
+      .description p:first-child {
+        top: 0; 
+      }
+      .description p:nth-child(2) {
+        top: 60px;
+      }
+      .description p:nth-child(3) {
+        top: 100px; 
+      }
+      .description p:nth-child(4) {
+        top: 140px; 
+      }
+      .description a p:last-child {
+        top: 180px; 
+      }
+
+      .my-projects-page .my-projects-header{
+        font-size: 60px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .project{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+    }
+    .project div{
+        width: 50%;
+    }
+    .project p{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .project .project-headers{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .project .project-image{
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+}
+
+@media screen and (min-width: 480px) and (max-width: 767px){
+    .first-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 50%;
+        width: 100%;
+        margin-top: 130px;
+        position: relative;
+    }
+    .profile-picture{
+        position: absolute;
+        height: 55vw;
+        width: 55vw;
+        z-index: 2;
+        margin-top: 30px;
+      }
+      .description{
+        position: relative;
+      }
+      .description .intro{
+        width: 100%;
+        margin-left: 0;
+        margin: 0;
+        position: absolute;
+        z-index: 4;
+      }
+      .description .sub-intro{
+        width: 100%;
+        margin-left: 0;
+        margin: 0;
+        position: absolute;
+        z-index: 4;
+        font-size: 20px;
+        margin-top: 40px;
+      }
+      .description p{
+        overflow: hidden;
+        text-align: right;
+        padding-right: 5vw;
+        font-size: 50px;
+      }
+
+
+      .description p:first-child {
+        top: 0; 
+      }
+      .description p:nth-child(2) {
+        top: 60px;
+      }
+      .description p:nth-child(3) {
+        top: 100px; 
+      }
+      .description p:nth-child(4) {
+        top: 140px; 
+      }
+      .description a p:last-child {
+        top: 180px; 
+      }
+
+      .my-projects-page .my-projects-header{
+        font-size: 60px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .project{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 50px;
+    }
+    .project div{
+        width: 50%;
+    }
+    .project p{
+        font-size: 20px;
+        text-align: center;
+    }
+    
+    .project .project-headers{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .project .project-image{
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
+
+      
+      @media screen and (min-width: 480px) and (max-width: 680px){
+        .first-page{
+            height: 35%;
+            margin-top: 70px;
+        }
+        .profile-picture{
+            height: 45vw;
+            width: 45vw;
+            z-index: 2;
+            margin-top: 30px;
+        }
+        .description{
+            position: relative;
+            margin-left: 20px;
+        }
+        .description .intro{
+            width: 100%;
+            margin: 0;
+            position: absolute;
+            z-index: 4;
+        }
+        .description p{
+            overflow: hidden;
+            text-align: left;
+            padding-right: 5vw;
+            font-size: 40px;
+        }
+
+        .my-projects-page .my-projects-header{
+            font-size: 60px;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+        .project{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            margin: 20px;
+        }
+        .project div{
+            width: 100%;
+        }
+        .project p{
+            font-size: 20px;
+            text-align: center;
+        }
+        
+        .project .project-headers{
+            font-size: 30px;
+            text-align: center;
+        }
+        
+        .project .project-image{
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+        }
+      }
+}
+
+
+@media screen and (max-width: 479px){
     nav{
         display: flex;
         justify-content:flex-end;
@@ -73,10 +597,107 @@ nav a:hover{
     .navigation-links{
         display:none;
     }
+    .first-page{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 35%;
+        width: 100%;
+        margin-top: 70px;
+        position: relative;
+    }
+    .profile-picture{
+        position: absolute;
+        height: 50vw;
+        width: 50vw;
+        z-index: 2;
+        margin-top: 30px;
+        margin: -5vw;
+    }
+    .description{
+        position: relative;
+        margin-left: 20px;
+    }
+    .description .intro{
+        width: 100%;
+        margin-left: 0;
+        margin: 0;
+        position: absolute;
+        z-index: 4;
+    }
+    .description .sub-intro{
+        width: 100%;
+        margin-left: 0;
+        margin: 0;
+        position: absolute;
+        z-index: 4;
+        font-size: 20px;
+        margin-top: 40px;
+    }
+    .description p{
+        overflow: hidden;
+        text-align: left;
+        padding-left: 3vw;
+        font-size: 40px;
+    }
+
+
+    .description p:first-child {
+        top: 0; 
+    }
+    .description p:nth-child(2) {
+        top: 60px;
+    }
+    .description p:nth-child(3) {
+        top: 100px; 
+    }
+    .description p:nth-child(4) {
+        top: 140px; 
+    }
+    .description a p:last-child {
+        top: 180px; 
+    }
+
+    .my-projects-page .my-projects-header{
+        font-size: 60px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .project{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 20px;
+    }
+    .project div{
+        width: 100%;
+    }
+    .project p{
+        font-size: 20px;
+        text-align: center;
+    }
     
-}*/
+    .project .project-headers{
+        font-size: 30px;
+        text-align: center;
+    }
+    
+    .project .project-image{
+        display: block;
+        margin: 0 auto;
+        width: 300px;
+    }
 
+    @media screen and (max-width: 380px){
+        .profile-picture{
+            height: 250px;
+            width: 250px;
+        }
+    }
+}
 
+/*
 @media screen and (width <= 402px){   
     nav{
         display: flex;
@@ -530,4 +1151,4 @@ nav a:hover{
   
 
 
-  
+  */
