@@ -9,6 +9,10 @@ menuIcon.addEventListener('click', () => {
     menuIcon.style.color = 'rgba(0,0,0,0)';
     exitIcon.style.display = 'block';
   }
+  else {
+    popup.style.display = 'none';
+    menuIcon.style.display = 'block';
+  }
 });
 
 exitIcon.addEventListener('click', () => {
