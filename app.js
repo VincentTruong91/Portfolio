@@ -28,7 +28,7 @@ exitIcon.addEventListener('click', () => {
     }
 });
 
-window.addEventListener('resize', () => {
+/*window.addEventListener('resize', () => {
     if (window.innerWidth <= 479) {
         if(popup.style.display === 'none'){
             popup.style.display = 'none';
@@ -53,7 +53,7 @@ window.addEventListener('resize', () => {
     }
   });
 
-
+*/
 
 
 
