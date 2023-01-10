@@ -31,16 +31,14 @@ nav{
     z-index: 15;
 }
 
-nav a{
-    color: rgb(83, 101, 76);
-}
+
+
+
+
 nav a:hover{
     color: rgb(162, 189, 57);
     cursor: pointer;
 }
-
-
-
 
 
 .popup {
@@ -127,14 +125,25 @@ nav a:hover{
 
 
 /*
-    Display Types with min-width dimensions:
-    desktop: 1200px
-    laptop: 1024px
-    tablet: 768px
-    phone: 480px
+    Display Types with width range dimensions:
+    desktop: 1200px - above
+    laptop: 1024px - 1199px
+    small laptop/tablet: 768px - 1023px
+    small tablet: 480px - 767px
+    phone: 479px - below
 */
 
 @media screen and (min-width: 1200px){
+    nav a{
+        color: rgb(83, 101, 76);
+        font-size: 30px;
+        margin: 0 3.5vw;
+        text-decoration: none;
+    }
+    .navigation-bar .menu-icon,
+    .navigation-bar .exit-icon {
+      display: none;
+    }
     .first-page{
         display: flex;
         justify-content: center;
@@ -226,10 +235,60 @@ nav a:hover{
         margin: 0 auto;
         width: 300px;
     }
+
+    .my-projects-page .my-projects-header{
+        font-size: 100px;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+    .project{
+        display: flex;
+        flex-direction: row;
+        margin: 60px;
+    }
+    .project div{
+        width: 50%;
+    }
+    .project p{
+        font-size: 24px;
+        text-align: center;
+    }
+        
+    .project .project-headers{
+        font-size: 40px;
+        text-align: center;
+    }
+        
+    .project .project-image{
+        display: block;
+        margin: 0 auto;
+        width: 500px;
+    }
+        
+    .left-section{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+        
+    .left-section, .right-section{
+        padding: 30px;
+    }
 }
 
 
 @media screen and (min-width: 1024px) and (max-width: 1199px){
+    nav a{
+        color: rgb(83, 101, 76);
+        font-size: 2.5vw;
+        margin: 0 3.5vw;
+        text-decoration: none;
+    }
+    .navigation-bar .menu-icon,
+    .navigation-bar .exit-icon {
+      display: none;
+    }
     .first-page{
         display: flex;
         justify-content: center;
@@ -326,6 +385,16 @@ nav a:hover{
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px){
+    nav a{
+        color: rgb(83, 101, 76);
+        font-size: 2.5vw;
+        margin: 0 3.5vw;
+        text-decoration: none;
+    }
+    .navigation-bar .menu-icon,
+    .navigation-bar .exit-icon {
+      display: none;
+    }
     .first-page{
         display: flex;
         justify-content: center;
@@ -418,6 +487,17 @@ nav a:hover{
 }
 
 @media screen and (min-width: 480px) and (max-width: 767px){
+    nav a{
+        color: rgb(83, 101, 76);
+        font-size: 2.5vw;
+        margin: 0 3.5vw;
+        text-decoration: none;
+    }
+    .navigation-bar .menu-icon,
+    .navigation-bar .exit-icon {
+      display: none;
+    }
+
     .first-page{
         display: flex;
         justify-content: center;
@@ -579,7 +659,7 @@ nav a:hover{
         position: fixed;
     }
     .navigation-bar .menu-icon {
-        display: block;
+        display: block !important;
         margin-right: 20px;
         color:rgb(83, 101, 76);
         font-size: 25px;

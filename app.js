@@ -27,7 +27,7 @@ exitIcon.addEventListener('click', () => {
 });
 
 window.addEventListener('resize', () => {
-    if (window.innerWidth <= 402) {
+    if (window.innerWidth <= 479) {
         if(popup.style.display === 'none'){
             popup.style.display = 'none';
             menuIcon.style.display = 'block';
@@ -39,7 +39,7 @@ window.addEventListener('resize', () => {
             exitIcon.style.display = 'block';
         }
     }
-    else if(window.innerWidth > 402){
+    else if(window.innerWidth > 479){
       popup.style.display = 'none';
       menuIcon.style.display = 'none';
       exitIcon.style.display = 'none';
