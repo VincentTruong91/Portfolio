@@ -6,11 +6,8 @@ menuIcon.addEventListener('click', () => {
   if (popup.style.display === 'none') {
     popup.style.display = 'block';
     menuIcon.style.display = 'none';
+    menuIcon.style.color = 'rgba(0,0,0,0)';
     exitIcon.style.display = 'block';
-  } 
-  else {
-    popup.style.display = 'none';
-    menuIcon.style.display = 'block';
   }
 });
 
@@ -18,6 +15,7 @@ exitIcon.addEventListener('click', () => {
     if(popup.style.display === 'block'){
         popup.style.display = 'none';
         menuIcon.style.display = 'block';
+        menuIcon.style.color = 'rgba(0,0,0,1)';
         exitIcon.style.display = 'none';
     }
     else{
@@ -57,4 +55,3 @@ window.addEventListener('resize', () => {
 
 
 
-  
