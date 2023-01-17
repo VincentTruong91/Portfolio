@@ -315,7 +315,6 @@ nav a:hover{
         margin-top: -10vw;
         position: absolute;
         z-index: 4;
-        border: 1px solid blue;
       }
 
       .description .sub-intro{
